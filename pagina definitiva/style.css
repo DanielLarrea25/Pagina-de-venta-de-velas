@@ -1,0 +1,171 @@
+/* Paleta elegante */
+:root {
+  --beige: #FDF6EC;       /* fondo principal */
+  --rosa-nude: #E8C4C4;   /* acento */
+  --blanco: #FFFFFF;      /* contraste */
+  --gris-texto: #444444;  /* texto principal */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--beige);
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--rosa-nude);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--gris-texto);
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #222;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--beige);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--gris-texto);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+  color: #555;
+}
+
+/* Secciones */
+section {
+  padding: 3rem 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gris-texto);
+}
+
+/* Productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--gris-texto);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Contacto */
+.contacto {
+  max-width: 600px;
+  margin: auto;
+  background: var(--blanco);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto label {
+  font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contacto button {
+  background-color: var(--rosa-nude);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contacto button:hover {
+  background-color: #d7aaaa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--rosa-nude);
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--gris-texto);
+  font-weight: 500;
+}
