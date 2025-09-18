@@ -169,3 +169,55 @@ footer {
   color: var(--gris-texto);
   font-weight: 500;
 }
+.detalle-producto {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.detalle-producto .info {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.detalle-producto img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.detalle-producto h1 {
+  margin-bottom: 15px;
+}
+
+.detalle-producto ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.detalle-producto .precio {
+  display: block;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.volver {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.card a {
+  display: block;
+  color: inherit;     /* mantiene los colores de texto */
+  text-decoration: none; /* quita subrayado */
+}
+
+.card a:hover {
+  opacity: 0.9; /* efecto al pasar el mouse */
+}
+.card a:focus {
+  outline: 2px solid var(--rosa-nude); /* mejora accesibilidad */
+}
